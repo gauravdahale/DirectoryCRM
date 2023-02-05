@@ -53,32 +53,10 @@ export class MenuComponent {
         ]
       },
       {
-        label:'Orders',
+        label:'Requests',
         icon:'pi pi-fw pi-pencil',
-        items:[
-          {
-            label:'Sakoli',
-            icon:'pi pi-fw pi-align-left',
-            routerLink:'orders',
-            queryParams: {city:'sakoli'}
-          },
-          {
-            label:'Lakhni',
-            icon:'pi pi-fw pi-align-right',
-            routerLink:'orders',
-            queryParams: {city:'lakhni'}
+        routerLink:'requests',
 
-          },
-          // {
-          //   label:'Center',
-          //   icon:'pi pi-fw pi-align-center'
-          // },
-          // {
-          //   label:'Justify',
-          //   icon:'pi pi-fw pi-align-justify'
-          // },
-
-        ]
       },
       // {
       //   label:'Users',

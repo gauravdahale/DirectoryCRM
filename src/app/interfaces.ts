@@ -45,3 +45,21 @@ export interface Userdetail {
   usermobile: string
   username: string
 }
+
+
+export interface Requests {
+
+  a?: string
+  c: string
+  d: string
+  datetime:  string
+  i: string
+  n: string
+  o: string
+    username:string
+  p: string
+
+  status: string
+  timestamp: number
+
+}

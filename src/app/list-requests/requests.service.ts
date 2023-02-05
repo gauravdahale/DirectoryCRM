@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {AngularFireDatabase} from "@angular/fire/compat/database";
-import {Order} from "../interfaces";
+import {Order, Requests} from "../interfaces";
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class RequestsService {
   }
 
   getRequests() {
-    return this.mDatabase.list('NewRequests', ref => ref.limitToLast(200)).valueChanges()
+    return this.mDatabase.list<Requests>('NewRequests', ref => ref.orderByChild('timestamp').limitToLast(200)).valueChanges()
   }
 
   getOrders(city: string) {

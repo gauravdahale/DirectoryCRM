@@ -6,6 +6,7 @@ import {ListRequestsComponent} from "./list-requests/list-requests.component";
 const routes: Routes = [
   { path: 'users', component: ListUsersComponent },
   { path: 'orders', component: ListRequestsComponent },
+  { path: 'requests', component: ListRequestsComponent },
   { path: 'orders:city', component: ListRequestsComponent },
   { path: '', redirectTo: '/users', pathMatch: 'full' },
 ]
