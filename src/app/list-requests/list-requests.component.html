@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>&nbsp; {{city|titlecase}} Requests</h2>
+  <div *ngFor  =" let order of orderList">
+    <!--  <p-card header="{{order.userName}}">-->
+    <div class="card p-2 m-2" >
+      <p>
+Name : {{order.userdetail.username}}<br>
+        Mobile : {{order.userdetail.usermobile}}<br>
+        Address : {{order.userdetail.address}}<br>
+        Bill Amount: {{order.billamount}}<br>
+        Status: {{order.status}}<br>
+        Date: {{order.timestamp | date:'medium'}}<br>
+<!--        Address: {{order.s}}<br>-->
+<!--        Install Date: {{order.datetime}}</p>-->
+    </div>
+
+  </div>
+</div>

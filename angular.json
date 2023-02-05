@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/zodezee",
+            "outputPath": "dist/directory-crm",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -114,6 +114,6 @@
     }
   },
   "cli": {
-    "analytics": "22bcf655-7c77-4e83-a7fe-cbf16ee3a556"
+    "analytics": "c8350b4e-aa12-4553-be6d-0fc8e1906fc1"
   }
 }
