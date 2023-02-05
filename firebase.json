@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/directory-crm",
+    "public": "dist/akola",
     "ignore": [
       "firebase.json",
       "**/.*",

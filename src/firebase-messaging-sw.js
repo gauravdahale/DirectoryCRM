@@ -7,13 +7,13 @@
 importScripts("https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js");
 importScripts("https://www.gstatic.com/firebasejs/9.1.3/firebase-messaging-compat.js");
 firebase.initializeApp({
-  apiKey: "AIzaSyAiX5Irtfrqz4DkzIC-2gaTWOomha8U3CQ",
-  authDomain: "buldhana-directory.firebaseapp.com",
-  databaseURL: "https://buldhana-directory-default-rtdb.firebaseio.com",
-  projectId: "buldhana-directory",
-  storageBucket: "buldhana-directory.appspot.com",
-  messagingSenderId: "884083362195",
-  appId: "1:884083362195:web:8ba4ff1a168f4b1907c066",
-  measurementId: "G-B3YMWQR8V1"
+  apiKey: "AIzaSyCTbrq4URWVk6bf6XALVvmom0zCfN7aW6U",
+  authDomain: "akola-directory-9defc.firebaseapp.com",
+  databaseURL: "https://akola-directory-9defc.firebaseio.com",
+  projectId: "akola-directory-9defc",
+  storageBucket: "akola-directory-9defc.appspot.com",
+  messagingSenderId: "403194184955",
+  appId: "1:403194184955:web:0083b7d7e24aa1d2bc9c5e",
+  measurementId: "G-LFKLBDSBGQ"
 });
 const messaging = firebase.messaging();

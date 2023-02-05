@@ -12,7 +12,7 @@ export class RequestsService {
   }
 
   getRequests() {
-    return this.mDatabase.list<Requests>('NewRequests', ref => ref.orderByChild('timestamp').limitToLast(200)).valueChanges()
+    return this.mDatabase.list<Requests>('NewRequests', ref => ref.orderByChild('datetime').limitToLast(200)).valueChanges()
   }
 
   getOrders(city: string) {

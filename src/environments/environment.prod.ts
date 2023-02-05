@@ -4,15 +4,15 @@
 
 export const environment = {
   firebase: {
-    apiKey: "AIzaSyAiX5Irtfrqz4DkzIC-2gaTWOomha8U3CQ",
-    authDomain: "buldhana-directory.firebaseapp.com",
-    databaseURL: "https://buldhana-directory-default-rtdb.firebaseio.com",
-    projectId: "buldhana-directory",
-    storageBucket: "buldhana-directory.appspot.com",
-    messagingSenderId: "884083362195",
-    appId: "1:884083362195:web:8ba4ff1a168f4b1907c066",
-    measurementId: "G-B3YMWQR8V1",
-    vapidKey: "AAAAzdd5iZM:APA91bE6s77hUxQ32fuMWyPRDFETlog-yOor1sUXcyEDo-6zc4vVZTMtJo0ZEQ-sCH9-x5Awmvkv1N4XeJebFzKv4hQB7qsTuiuBYaqToNskUbY4AkPwFlXivpeHX2FZbScqAE_3zwSn"
+    apiKey: "AIzaSyCTbrq4URWVk6bf6XALVvmom0zCfN7aW6U",
+    authDomain: "akola-directory-9defc.firebaseapp.com",
+    databaseURL: "https://akola-directory-9defc.firebaseio.com",
+    projectId: "akola-directory-9defc",
+    storageBucket: "akola-directory-9defc.appspot.com",
+    messagingSenderId: "403194184955",
+    appId: "1:403194184955:web:0083b7d7e24aa1d2bc9c5e",
+    measurementId: "G-LFKLBDSBGQ",
+    vapidKey:"AAAAXeA_BPs:APA91bEyUrEd0-3EO3qPMexh6Qhhbt1afYJZQ5CGgQ5cKa6UsQDEKv3lTE924AyOSJ4wy_yb5DtGdX6ObOVmlsTm-GzPuMtaGY8GporSsylh879RLRoNu8LZn2JBv2ZmBLQRjPx97Kxw"
 
   },
   production: true
