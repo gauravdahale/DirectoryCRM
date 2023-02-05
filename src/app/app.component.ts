@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem, PrimeNGConfig} from "primeng/api";
+import {MessagingService} from "./messaging.service";
+import {AngularFireMessaging} from "@angular/fire/compat/messaging";
 
+import { getMessaging, getToken, onMessage } from "firebase/messaging";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,12 +12,36 @@ import {MenuItem, PrimeNGConfig} from "primeng/api";
 export class AppComponent implements OnInit{
   title = 'Zodezee Admin';
   items!: MenuItem[];
+message:any
 
-  constructor(private primengConfig: PrimeNGConfig) {
+  constructor(private primengConfig: PrimeNGConfig,
+              private messaging:AngularFireMessaging,
+              private mService:MessagingService
+             ) {
 
-
+messaging.requestPermission.subscribe(()=>{
+  console.log('Permission granted!')},
+  (error) => { console.error(error);
+})
+    messaging.onMessage((message)=>{
+      console.log('Message recieved',message)
+    })
+    messaging.getToken.subscribe(next=>{
+      console.log('TOKEN',next)
+    })
+    this.listen();
+    // this.message = messaging.
+    this.mService.requestPermission()
+    this.mService.receiveMessage()
+this.message= this.mService.currentMessage
+}
+  listen() {
+    const messaging = getMessaging();
+    onMessage(messaging, (payload) => {
+      console.log('Message received. ', payload);
+      this.message=payload;
+    });
   }
-
   ngOnInit(): void {
     this.primengConfig.ripple = true;
 

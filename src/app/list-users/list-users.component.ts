@@ -17,7 +17,7 @@ constructor(private userService:UsersService) {
   ngOnInit(): void {
   this.userService.getUsers().pipe(takeUntil(this._destroyed$)).subscribe(users=>{
     users.forEach(user=>{
-      console.log(user)
+      // console.log(user)
       this.userslist.push(user)
       this.userslist.reverse()
     })

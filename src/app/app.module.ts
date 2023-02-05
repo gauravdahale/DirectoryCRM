@@ -25,6 +25,9 @@ import {CardModule} from 'primeng/card';
 import {FIREBASE_OPTIONS} from "@angular/fire/compat";
 import { ListRequestsComponent } from './list-requests/list-requests.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import {getMessaging, provideMessaging} from "@angular/fire/messaging";
+import {AsyncPipe} from "@angular/common";
+import {MessagingService} from "./messaging.service";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -50,6 +53,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
+    provideMessaging(() => getMessaging()),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
@@ -58,7 +62,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     })
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService,
+    ScreenTrackingService, UserTrackingService,AsyncPipe,MessagingService,
     {provide: FIREBASE_OPTIONS, useValue: environment.firebase}
   ]
 })

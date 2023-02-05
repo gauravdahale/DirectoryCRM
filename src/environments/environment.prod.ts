@@ -11,7 +11,9 @@ export const environment = {
     storageBucket: "buldhana-directory.appspot.com",
     messagingSenderId: "884083362195",
     appId: "1:884083362195:web:8ba4ff1a168f4b1907c066",
-    measurementId: "G-B3YMWQR8V1"
+    measurementId: "G-B3YMWQR8V1",
+    vapidKey: "AAAAzdd5iZM:APA91bE6s77hUxQ32fuMWyPRDFETlog-yOor1sUXcyEDo-6zc4vVZTMtJo0ZEQ-sCH9-x5Awmvkv1N4XeJebFzKv4hQB7qsTuiuBYaqToNskUbY4AkPwFlXivpeHX2FZbScqAE_3zwSn"
+
   },
   production: true
 };
