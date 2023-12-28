@@ -28,6 +28,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import {getMessaging, provideMessaging} from "@angular/fire/messaging";
 import {AsyncPipe} from "@angular/common";
 import {MessagingService} from "./messaging.service";
+import { DeleteDataComponent } from './delete-data/delete-data.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -35,7 +37,8 @@ import {MessagingService} from "./messaging.service";
     AppComponent,
     ListUsersComponent,
     MenuComponent,
-    ListRequestsComponent
+    ListRequestsComponent,
+    DeleteDataComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ import {MessagingService} from "./messaging.service";
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    FormsModule
   ],
   providers: [
     ScreenTrackingService, UserTrackingService,AsyncPipe,MessagingService,
